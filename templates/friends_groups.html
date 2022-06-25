@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Группы с друзьями</h1>
+<p1>{{fail}}</p1>
+<ul>
+{%for i in range(0, len)%}
+
+    <li><label>группа: </label>
+        <a href={{friends_groups_list[i][0]}} style="color:#FF0000; text-decoration:none">{{friends_groups_list[i][1]}}</a>
+        <label>друг в ней: </label>
+        <a href={{friends_groups_list[i][2]}} style="color:#FF0000; text-decoration:none">{{friends_groups_list[i][3]}}</a>
+    </li>
+
+{%endfor%}
+</ul>
+</body>
+</html>
