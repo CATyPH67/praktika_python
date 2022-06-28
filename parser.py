@@ -11,7 +11,8 @@ def pars_friends(driver) -> list:
     for button in counter_buttons:
         accessible_name_list = button.accessible_name.split()
         if (accessible_name_list[len(accessible_name_list) - 1] == "друзей" or
-            accessible_name_list[len(accessible_name_list) - 1] == "друга") and \
+            accessible_name_list[len(accessible_name_list) - 1] == "друга" or
+            accessible_name_list[len(accessible_name_list) - 1] == "друг") and \
                 accessible_name_list[len(accessible_name_list) - 2] != "общих":
             friend_button = button
             break
